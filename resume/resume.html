@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthick - Python / Backend Developer Resume</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-variant-ligatures: none !important;
+      -webkit-font-variant-ligatures: none !important;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-size: 10pt;
+      line-height: 1.35;
+      color: #111111;
+      background-color: #f3f4f6;
+      text-rendering: optimizeLegibility;
+      font-weight: normal;
+    }
+
+    /* Enforce NO bold anywhere except designated headings */
+    strong, b, span, p, li, a {
+      font-weight: normal !important;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 12mm 15mm 10mm 15mm;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        max-height: 297mm;
+        padding: 12mm 15mm 10mm 15mm;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Print instruction bar */
+    .no-print-bar {
+      width: 210mm;
+      margin: 15px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .no-print-bar button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .no-print-bar button:hover {
+      background: #1d4ed8;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 8px;
+      border-bottom: 1.5px solid #111111;
+      padding-bottom: 7px;
+    }
+
+    h1 {
+      font-size: 21pt;
+      font-weight: bold !important;
+      letter-spacing: 0.5px;
+      color: #000000;
+      line-height: 1.1;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+    }
+
+    .headline {
+      font-size: 11pt;
+      font-weight: bold !important;
+      color: #222222;
+      margin-bottom: 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-line {
+      font-size: 9.5pt;
+      color: #222222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.35;
+    }
+
+    .contact-line a {
+      color: #111111;
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-sep {
+      color: #666666;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 7px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: bold !important;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #000000;
+      border-bottom: 1px solid #333333;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    p.summary {
+      font-size: 9.6pt;
+      line-height: 1.35;
+      color: #111111;
+      text-align: justify;
+    }
+
+    /* Skills List */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 9.5pt;
+    }
+
+    .skill-row {
+      display: flex;
+      line-height: 1.32;
+    }
+
+    .skill-title {
+      min-width: 140px;
+      flex-shrink: 0;
+      color: #111111;
+    }
+
+    .skill-desc {
+      color: #222222;
+    }
+
+    /* Items (Projects, Experience, Education) */
+    .item {
+      margin-bottom: 6px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-size: 10pt;
+      font-weight: bold !important;
+      color: #000000;
+    }
+
+    .item-sub {
+      font-size: 9.2pt;
+      color: #333333;
+    }
+
+    .item-sub a {
+      color: #111111;
+      text-decoration: underline;
+    }
+
+    .item-right {
+      font-size: 9.2pt;
+      color: #333333;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 14px;
+      font-size: 9.4pt;
+      line-height: 1.33;
+      color: #111111;
+      margin-bottom: 2px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 3px;
+      top: 0;
+      color: #111111;
+    }
+
+    /* Compact Education row */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9.5pt;
+    }
+
+    .edu-degree {
+      font-size: 10pt;
+      font-weight: bold !important;
+      color: #000000;
+    }
+
+    .edu-college {
+      color: #222222;
+    }
+
+    .edu-date {
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print-bar no-print">
+    <span>💡 <strong>Tip:</strong> Press <strong>Ctrl+P</strong> (or click Print) and select <em>"Save as PDF"</em>. Ensure <em>Margins: None</em> or <em>Default</em> and <em>Background graphics: Checked</em>.</span>
+    <button onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <div class="page">
+    <div>
+      <!-- HEADER -->
+      <header>
+        <h1>KARTHICK</h1>
+        <div class="headline">Python Developer | Backend &amp; AI Systems</div>
+        <div class="contact-line">
+          <span>Chennai, India</span>
+          <span class="contact-sep">•</span>
+          <span>+91 9952072343</span>
+          <span class="contact-sep">•</span>
+          <a href="mailto:contact@karthicka.me">contact@karthicka.me</a>
+          <span class="contact-sep">•</span>
+          <a href="https://karthicka.me" target="_blank">karthicka.me</a>
+        </div>
+        <div class="contact-line" style="margin-top: 2px;">
+          <a href="https://github.com/akarthick-dev" target="_blank">github.com/akarthick-dev</a>
+          <span class="contact-sep">•</span>
+          <a href="https://linkedin.com/in/karthick-seven" target="_blank">linkedin.com/in/karthick-seven</a>
+        </div>
+      </header>
+
+      <!-- PROFESSIONAL SUMMARY -->
+      <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+          Python Developer focused on backend development, building RESTful APIs with FastAPI, and implementing Generative AI pipelines. Experienced in developing Retrieval-Augmented Generation (RAG) systems using LangChain and ChromaDB, creating autonomous terminal agents using FastMCP (Model Context Protocol), and designing automated workflows with n8n. Skilled in core Python development, MySQL database integration, and building reliable developer tools.
+        </p>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-title">Backend &amp; APIs:</span>
+            <span class="skill-desc">FastAPI, RESTful APIs, Pydantic</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-title">Languages &amp; DB:</span>
+            <span class="skill-desc">Python, MySQL</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-title">AI &amp; Automation:</span>
+            <span class="skill-desc">LangChain, ChromaDB, RAG Pipelines, Vector Search, FastMCP (Model Context Protocol), n8n, Ollama</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-title">Audio &amp; Speech:</span>
+            <span class="skill-desc">OpenAI Whisper / faster-whisper (STT), ElevenLabs API (TTS)</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-title">Developer Tools:</span>
+            <span class="skill-desc">Git, GitHub, Linux</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL PROJECTS -->
+      <section>
+        <h2>Technical Projects</h2>
+
+        <!-- Project 1: Terminal Agent -->
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Terminal AI Agent with MCP</span>
+              <span class="item-sub">| Python, FastMCP, CLI | <a href="https://github.com/akarthick-dev/sanacode" target="_blank">GitHub Repository</a></span>
+            </div>
+            <span class="item-right">Open Source</span>
+          </div>
+          <ul>
+            <li>Developed an interactive terminal AI assistant in Python powered by the Model Context Protocol (FastMCP) for conversational system interaction.</li>
+            <li>Implemented custom MCP tools for file system management (read_file, write_file, list_files), in-file text search, and shell command execution.</li>
+            <li>Integrated safety controls, interactive user confirmation flags, and command timeout handling to ensure secure terminal command execution.</li>
+          </ul>
+        </div>
+
+        <!-- Project 2: RAG Service -->
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Retrieval-Augmented Generation (RAG) Service</span>
+              <span class="item-sub">| Python, FastAPI, LangChain, ChromaDB | <a href="https://github.com/akarthick-dev/Retrieval-Augmented-Generation" target="_blank">GitHub: RAG</a></span>
+            </div>
+            <span class="item-right">Open Source</span>
+          </div>
+          <ul>
+            <li>Built a document question-answering service using Python, FastAPI, LangChain, and ChromaDB to ingest and search custom documents.</li>
+            <li>Implemented text chunking with RecursiveCharacterTextSplitter and vector search to retrieve relevant context passages.</li>
+            <li>Exposed RESTful API endpoints (/upload, /ask) with Pydantic request validation for automated document ingestion and question answering.</li>
+          </ul>
+        </div>
+
+        <!-- Project 3: AI Voice Assistant Backend -->
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">AI Voice Assistant Backend</span>
+              <span class="item-sub">| Python, FastAPI, Whisper, ElevenLabs | <a href="https://karthicka.me" target="_blank">karthicka.me</a></span>
+            </div>
+            <span class="item-right">Personal Project</span>
+          </div>
+          <ul>
+            <li>Developed a Python backend using FastAPI to orchestrate voice interactions, speech-to-text processing, and speech synthesis.</li>
+            <li>Integrated faster-whisper with voice activity detection (VAD) for audio transcription and ElevenLabs API for speech output.</li>
+            <li>Structured conversational session flow to handle context retention and natural multi-turn dialogue.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section>
+        <h2>Professional Experience</h2>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">IoT Engineering Intern</span>
+              <span class="item-sub">— Titan Leap Center (Naandi Foundation)</span>
+            </div>
+            <span class="item-right">Chennai, India | Internship</span>
+          </div>
+          <ul>
+            <li>Learned fundamental principles of IoT hardware architectures, microcontroller pinouts, and sensor interfacing.</li>
+            <li>Assisted in setting up, wiring, and testing basic environmental sensor modules for preliminary data collection.</li>
+            <li>Observed and tested serial communication data feeds between microcontrollers and host computers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+      <section>
+        <h2>Achievements &amp; Certifications</h2>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">1st Place — AI Agent Automation Challenge</span>
+              <span class="item-sub">| Inter-College Technical Symposium</span>
+            </div>
+            <span class="item-right">Winner</span>
+          </div>
+          <ul>
+            <li>Secured 1st place among 15+ competing teams by designing and demonstrating an automated agentic workflow using n8n and Python integrations.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">HACKFORGE 2025 — National Level 24-Hour Hackathon</span>
+              <span class="item-sub">| DG Vaishnav College &amp; Tech Knots</span>
+            </div>
+            <span class="item-right">Dec 2025</span>
+          </div>
+          <ul>
+            <li>Selected and participated in a 24-hour national hackathon, collaborating on rapid software prototyping and solution delivery.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Cyber Security Certification (Grade A)</span>
+              <span class="item-sub">| IBM SkillsBuild &amp; ICT Academy</span>
+            </div>
+            <span class="item-right">Mar 2026</span>
+          </div>
+          <ul>
+            <li>Completed certification course on cybersecurity fundamentals, network security protocols, and system defenses.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2>Education</h2>
+        <div class="edu-row">
+          <div>
+            <span class="edu-degree">B.Sc. in Computer Science</span>
+            <span class="edu-college"> — Agurchand Manmull Jain College</span>
+          </div>
+          <span class="edu-date">2023 – 2026 | Chennai, India</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>

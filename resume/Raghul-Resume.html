@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raghul Vimandan M - Resume</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-variant-ligatures: none !important;
+      -webkit-font-variant-ligatures: none !important;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-size: 12.5pt;
+      line-height: 1.7;
+      color: #111111;
+      background-color: #f3f4f6;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 24mm 24mm 22mm 24mm;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        max-height: 297mm;
+        padding: 24mm 24mm 22mm 24mm;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Print instruction bar */
+    .no-print-bar {
+      width: 210mm;
+      margin: 15px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .no-print-bar button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .no-print-bar button:hover {
+      background: #1d4ed8;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #111111;
+      padding-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 31pt;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #000000;
+      line-height: 1.15;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .contact-line {
+      font-size: 12.5pt;
+      color: #222222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      line-height: 1.4;
+    }
+
+    .contact-line a {
+      color: #111111;
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-sep {
+      color: #555555;
+      font-weight: bold;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 32px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 13.5pt;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+      border-bottom: 1.5px solid #222222;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+    }
+
+    p.summary-text {
+      font-size: 12.2pt;
+      line-height: 1.75;
+      color: #111111;
+      text-align: justify;
+    }
+
+    /* Items */
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      font-size: 13pt;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .item-sub {
+      font-size: 12.2pt;
+      color: #333333;
+      margin-top: 3px;
+    }
+
+    .item-right {
+      font-size: 12.2pt;
+      color: #333333;
+      text-align: right;
+      white-space: nowrap;
+      font-weight: normal;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 8px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 12.2pt;
+      line-height: 1.7;
+      color: #111111;
+      margin-bottom: 8px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      top: 0;
+      color: #111111;
+      font-size: 14pt;
+    }
+
+    /* Skills Block */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 12.2pt;
+    }
+
+    .skill-row {
+      display: flex;
+      line-height: 1.65;
+    }
+
+    .skill-title {
+      min-width: 220px;
+      flex-shrink: 0;
+      font-weight: bold;
+      color: #111111;
+    }
+
+    .skill-desc {
+      color: #222222;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print-bar no-print">
+    <span>💡 <strong>Tip:</strong> Press <strong>Ctrl+P</strong> (or click Print) and select <em>"Save as PDF"</em>. Ensure <em>Margins: None</em> or <em>Default</em> and <em>Background graphics: Checked</em>.</span>
+    <button onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <div class="page">
+    <div>
+      <!-- HEADER -->
+      <header>
+        <h1>RAGHUL VIMANDAN M</h1>
+        <div class="contact-line">
+          <span>[+91] 9710266554</span>
+          <span class="contact-sep">•</span>
+          <a href="mailto:23g145raghulvimandan@gmail.com">23g145raghulvimandan@gmail.com</a>
+          <span class="contact-sep">•</span>
+          <span>Chennai, TN, India</span>
+        </div>
+      </header>
+
+      <!-- SUMMARY -->
+      <section>
+        <h2>SUMMARY</h2>
+        <p class="summary-text">
+          A dedicated and results-oriented Computer Science graduate seeking an entry-level opportunity within a dynamic organization. Eager to leverage a strong foundational understanding of software development principles and proven problem-solving abilities to contribute to high-impact projects. Committed to continuous learning and rapid upskilling in new technologies to achieve organizational goals.
+        </p>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2>EDUCATION</h2>
+        <div class="item-header">
+          <div class="item-title">B.Sc. in COMPUTER SCIENCE (Ongoing)</div>
+          <div class="item-right">Expected Graduation: 2026</div>
+        </div>
+        <div class="item-sub">Agurchand Manmull Jain College (University of Madras)</div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section>
+        <h2>EXPERIENCE</h2>
+        <div class="item-header">
+          <div class="item-title">IBM Cybersecurity Intern</div>
+          <div class="item-right">Completed</div>
+        </div>
+        <ul>
+          <li>Actively learning and establishing a foundational understanding of core cybersecurity principles, network defense, and threat analysis methodologies.</li>
+        </ul>
+      </section>
+
+      <!-- SKILLS & CERTIFICATIONS -->
+      <section>
+        <h2>SKILLS &amp; CERTIFICATIONS</h2>
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-title">Technical Proficiency:</span>
+            <span class="skill-desc">HTML, SQL (Fundamental), Microsoft Excel</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-title">Soft Skills:</span>
+            <span class="skill-desc">Teamwork, Eagerness to Learn</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-title">Certifications:</span>
+            <span class="skill-desc">Workshop - N8n (Issued by Am Jain College)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section>
+        <h2>LANGUAGES</h2>
+        <ul>
+          <li><strong>Tamil:</strong> Native</li>
+          <li><strong>English:</strong> Professional Working Proficiency</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
