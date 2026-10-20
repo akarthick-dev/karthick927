@@ -1,0 +1,13 @@
+{
+  "name": "karthick927",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "cd \"new protilo\" && npm install --legacy-peer-deps && npx vite build",
+    "deploy": "npx wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
+  }
+}

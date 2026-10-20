@@ -1,0 +1,9 @@
+name = "karthick927"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./new protilo/dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
