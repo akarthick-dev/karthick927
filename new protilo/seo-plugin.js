@@ -1,18 +1,18 @@
-﻿import { readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ===== 本地 SEO 站点信息（替代原先的 Sanity globalInfo） =====
-const SITE_URL = 'https://shaun.dev';
+const SITE_URL = 'https://karthicka.me';
 
 const SITE_META = {
-    siteTitle: 'Shaun Dev | 3D Web Developer Portfolio',
-    siteDescription: 'Interactive 3D developer portfolio by Shaun. Explore AI projects, WebGL experiments, React apps & creative 3D experiences in a hand-drawn gallery.',
-    aboutMe: "Shaun is a creative developer who builds interactive, engaging websites from scratch. He specializes in 3D web experiences, AI-powered applications, and clean, well-animated storytelling sites.",
-    githubUrl: 'https://github.com/Shaun520',
-    linkedinUrl: '',
+    siteTitle: 'Karthick A | Python Backend & AI Systems Developer | 3D Portfolio',
+    siteDescription: 'Interactive 3D hand-drawn portfolio by Karthick A. Walkable sketchbook with Sana AI Companion, RAG pipelines, WebGL experiments, and high-performance backend systems.',
+    aboutMe: "Karthick A is a Python Backend & AI Systems Developer based in Chennai, India. Specializing in autonomous agent workflows (FastMCP), RAG pipelines, and interactive 3D WebGL experiences.",
+    githubUrl: 'https://github.com/akarthick-dev',
+    linkedinUrl: 'https://www.linkedin.com/in/karthick-seven',
     instagramUrl: '',
     xUrl: '',
     tiktokUrl: '',
@@ -128,12 +128,12 @@ function buildJsonLd(globalInfo, projects, studio, awards, faqList) {
     const person = {
         '@type': 'Person',
         '@id': `${SITE_URL}/#person`,
-        name: 'Shaun',
-        alternateName: ['Shaun', 'Shaun Dev', 'Shaun520'],
+        name: 'Karthick A',
+        alternateName: ['Karthick', 'Karthick A', 'akarthick-dev'],
         url: SITE_URL,
-        jobTitle: 'Creative Frontend Developer',
-        description: globalInfo?.aboutMe || 'Creative developer specializing in 3D web experiences.',
-        knowsAbout: ['React', 'Three.js', 'JavaScript', 'TypeScript', 'GSAP', 'Next.js', 'WebGL', '3D Graphics', 'Web Development'],
+        jobTitle: 'Python Backend & AI Systems Developer',
+        description: globalInfo?.aboutMe || 'Python Backend and AI Systems Developer.',
+        knowsAbout: ['Python', 'FastAPI', 'FastMCP', 'ChromaDB', 'LangChain', 'React', 'Three.js', 'WebGL', 'Docker', 'MySQL'],
         sameAs: [
             globalInfo?.linkedinUrl,
             globalInfo?.githubUrl,
@@ -150,8 +150,8 @@ function buildJsonLd(globalInfo, projects, studio, awards, faqList) {
         '@type': 'WebSite',
         '@id': `${SITE_URL}/#website`,
         url: SITE_URL,
-        name: globalInfo?.siteTitle || 'Shaun Dev | 3D Web Developer Portfolio',
-        description: globalInfo?.siteDescription || 'Interactive 3D Developer Portfolio by Shaun',
+        name: globalInfo?.siteTitle || 'Karthick A | Python Backend & AI Systems Developer | 3D Portfolio',
+        description: globalInfo?.siteDescription || 'Interactive 3D Developer Portfolio by Karthick A',
         publisher: { '@id': `${SITE_URL}/#person` }
     };
     graph.push(website);
@@ -188,8 +188,8 @@ function buildJsonLd(globalInfo, projects, studio, awards, faqList) {
         graph.push({
             '@type': 'ItemList',
             '@id': `${SITE_URL}/#projectslist`,
-            name: 'Portfolio Projects by Shaun',
-            description: 'Selected web development projects showcasing React, Three.js, and creative frontend engineering.',
+            name: 'Portfolio Projects by Karthick A',
+            description: 'Selected AI, backend, and 3D WebGL projects showcasing FastMCP, RAG pipelines, and high-performance engineering.',
             numberOfItems: projects.length,
             itemListElement: projects.map((p, i) => ({
                 '@type': 'ListItem',
@@ -310,7 +310,7 @@ function buildJsonLd(globalInfo, projects, studio, awards, faqList) {
         graph.push({
             '@type': 'ItemList',
             '@id': `${SITE_URL}/#awardslist`,
-            name: 'Web Design Awards received by Shaun',
+            name: 'Awards & Recognitions received by Karthick A',
             numberOfItems: awards.length,
             itemListElement: awards.map((a, i) => ({
                 '@type': 'ListItem',
@@ -336,9 +336,9 @@ function buildJsonLd(globalInfo, projects, studio, awards, faqList) {
 
 // Helper to generate the llms.txt content in clean Markdown
 function buildLlmsTxt(globalInfo, projects, studio, awards, faqList) {
-    const siteTitle = globalInfo?.siteTitle || 'Shaun Dev | 3D Web Developer Portfolio';
-    const siteDescription = globalInfo?.siteDescription || 'Interactive 3D Developer Portfolio';
-    const aboutMe = globalInfo?.aboutMe || 'I am a creative developer specializing in 3D web experiences.';
+    const siteTitle = globalInfo?.siteTitle || 'Karthick A | Python Backend & AI Systems Developer | 3D Portfolio';
+    const siteDescription = globalInfo?.siteDescription || 'Interactive 3D Developer Portfolio by Karthick A';
+    const aboutMe = globalInfo?.aboutMe || 'Python Backend & AI Systems Developer based in Chennai, India.';
 
     let content = `# ${siteTitle}\n`;
     content += `> ${siteDescription}\n\n`;
@@ -397,7 +397,7 @@ export function generateSeoHtml() {
                 cachedLlmsContent = buildLlmsTxt(globalInfo, projects, studio, awards, faqList);
             } catch (e) {
                 console.error('SEO Plugin Error: Failed to build llms.txt from local content', e);
-                cachedLlmsContent = `# Shaun Dev\n> Creative Developer\n`;
+                cachedLlmsContent = `# Karthick A\n> Python Backend & AI Systems Developer\n`;
             }
         }
         return cachedLlmsContent;
@@ -425,9 +425,9 @@ export function generateSeoHtml() {
                 // 从本地内容构建 SEO 数据（替代原先的 Sanity 拉取）
                 const { globalInfo, projects, studio, awards, faqList } = buildLocalSeoData();
 
-                const siteTitle = globalInfo?.siteTitle || 'Shaun Dev | 3D Web Developer Portfolio';
-                const siteDescription = globalInfo?.siteDescription || 'Interactive 3D portfolio of a creative web developer.';
-                const aboutMe = globalInfo?.aboutMe || 'I am a creative developer specializing in 3D web experiences.';
+                const siteTitle = globalInfo?.siteTitle || 'Karthick A | Python Backend & AI Systems Developer | 3D Portfolio';
+                const siteDescription = globalInfo?.siteDescription || 'Interactive 3D portfolio of Karthick A.';
+                const aboutMe = globalInfo?.aboutMe || 'Python Backend & AI Systems Developer based in Chennai, India.';
 
                 // Cache llms.txt content for later bundle emission
                 cachedLlmsContent = buildLlmsTxt(globalInfo, projects, studio, awards, faqList);
