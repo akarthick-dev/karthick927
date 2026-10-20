@@ -1,0 +1,164 @@
+{
+  "content": {
+    "home": {
+      "title": "KARTHICK",
+      "tagline": "< creative developer />"
+    },
+    "gallery": {
+      "projects": [
+        {
+          "id": "sana-ai",
+          "title": "SANA AI",
+          "front": "/textures/gallery/monetuneprzod.webp",
+          "painted": "/textures/gallery/monetuneprzod_painted.webp",
+          "url": "https://github.com/akarthick-dev",
+          "description": "Personal AI Companion that unifies real-time voice synthesis, 3D spatial presence, and autonomous tool execution via Model Context Protocol (FastMCP). Sub-second conversational latency with faster-whisper and streaming ElevenLabs synthesis.",
+          "techStack": [
+            "/textures/gallery/pythonlogo.webp",
+            "/textures/gallery/fastmcplogo.webp",
+            "/textures/gallery/reactlogo.webp",
+            "/textures/gallery/jslogo.webp"
+          ]
+        },
+        {
+          "id": "rag-pipeline",
+          "title": "RAG PIPELINE",
+          "front": "/textures/gallery/youngmultiprzod.webp",
+          "painted": "/textures/gallery/youngmultiprzod_painted.webp",
+          "url": "https://github.com/akarthick-dev/Retrieval-Augmented-Generation",
+          "description": "Production-ready Retrieval-Augmented Generation service with semantic text chunking, vector indexing in ChromaDB, cosine similarity retrieval, and FastAPI endpoints (/upload, /ask) with Pydantic schemas.",
+          "techStack": [
+            "/textures/gallery/pythonlogo.webp",
+            "/textures/gallery/chromadblogo.webp",
+            "/textures/gallery/fastapilogo.webp",
+            "/textures/gallery/langchainlogo.webp"
+          ]
+        },
+        {
+          "id": "qwen-finetuning",
+          "title": "QWEN FINE-TUNING",
+          "front": "/textures/gallery/timberkittyprzod.webp",
+          "painted": "/textures/gallery/timberkittyprzod_painted.webp",
+          "url": "https://github.com/akarthick-dev",
+          "description": "Domain-adapted and instruction fine-tuned Qwen 2.5 LLM with custom LoRA adapters using Unsloth and PyTorch. Quantized to GGUF format for local high-throughput inference with Ollama.",
+          "techStack": [
+            "/textures/gallery/pythonlogo.webp",
+            "/textures/gallery/pytorchlogo.webp",
+            "/textures/gallery/huggingfacelogo.webp",
+            "/textures/gallery/ollamalogo.webp"
+          ]
+        },
+        {
+          "id": "email-automation",
+          "title": "EMAIL AUTOMATION",
+          "front": "/textures/gallery/bioprzod.webp",
+          "painted": "/textures/gallery/bioprzod_painted.webp",
+          "url": "https://github.com/akarthick-dev",
+          "description": "Intelligent autonomous email triage and workflow automation agent. Connects Gmail APIs with FastMCP and Python backend to parse incoming mail, classify urgency with LLMs, and draft auto-responses.",
+          "techStack": [
+            "/textures/gallery/pythonlogo.webp",
+            "/textures/gallery/gmaillogo.webp",
+            "/textures/gallery/fastmcplogo.webp",
+            "/textures/gallery/fastapilogo.webp"
+          ]
+        }
+      ]
+    },
+    "about": {
+      "intro": {
+        "name": "KARTHICK A",
+        "brand": "< creative developer />",
+        "avatar": "/textures/about/awatarnachmurce.webp",
+        "motto1": "\"Building Things That Should Exist\"",
+        "motto2": "Python Backend · AI Systems · WebGL"
+      },
+      "awards": {
+        "featured": {
+          "id": "award-featured",
+          "layout": "certificate_grid",
+          "title": "Recognition & Achievements",
+          "items": [
+            { "label": "1st Place: AI Agent Automation Symposium", "date": "2025", "image": "/portfolio_assets/hackforge.png", "url": "https://karthicka.me" },
+            { "label": "National Finalist: HackForge 24h Hackathon", "date": "2025", "image": "/portfolio_assets/hackforge.png", "url": "https://karthicka.me" },
+            { "label": "Best Overall Performance: Naandi Foundation IoT", "date": "2024", "image": "/portfolio_assets/iot-intern-won.jpeg", "url": "https://karthicka.me" },
+            { "label": "Grade A: IBM SkillsBuild Cyber Security", "date": "2024", "image": "/textures/about/SOTDAYYOUNGMULTICSSWINNER.webp", "url": "https://karthicka.me" }
+          ],
+          "platformConfig": { "label": "HONORS", "color": "#1a1a1a", "icon": "⭐" }
+        },
+        "sotd": {
+          "id": "award-sotd",
+          "layout": "certificate_grid",
+          "title": "Hackathons & Competitions",
+          "items": [
+            { "label": "1st Place: AI Agent Automation Challenge", "date": "2025", "image": "/portfolio_assets/hackforge.png", "url": "https://karthicka.me" },
+            { "label": "National Finalist: HACKFORGE 2025 24h Hackathon", "date": "2025", "image": "/portfolio_assets/hackforge.png", "url": "https://karthicka.me" }
+          ],
+          "platformConfig": { "label": "HACKATHON", "color": "#1a1a1a", "icon": "🏆" }
+        },
+        "sotm": {
+          "id": "award-sotm",
+          "layout": "certificate_grid",
+          "title": "Featured Projects",
+          "items": [
+            { "label": "Sana AI Companion & Voice Agent", "date": "2025", "image": "/textures/about/SOTDAYYOUNGMULTIORPETRON.webp", "url": "https://github.com/akarthick-dev" },
+            { "label": "Fine-Tuned Qwen 2.5 LLM with LoRA", "date": "2025", "image": "/textures/about/SOTDAYYOUNGMULTIGSAP.webp", "url": "https://github.com/akarthick-dev" }
+          ],
+          "platformConfig": { "label": "PROJECTS", "color": "#1a1a1a", "icon": "💡" }
+        },
+        "other": {
+          "id": "award-other",
+          "layout": "certificate_grid",
+          "title": "Honors & Professional Certifications",
+          "items": [
+            { "label": "Best Overall Performance: IoT Engineering Internship (Titan Leap / Naandi)", "date": "2024", "image": "/portfolio_assets/iot-intern-won.jpeg", "url": "https://karthicka.me" },
+            { "label": "IBM SkillsBuild: Cyber Security Certification (Grade A)", "date": "2024", "image": "/textures/about/SOTDAYYOUNGMULTICSSWINNER.webp", "url": "https://karthicka.me" }
+          ],
+          "platformConfig": { "label": "HONORS", "color": "#1a1a1a", "icon": "⭐" }
+        }
+      },
+      "journey": {
+        "title": "JOURNEY",
+        "subtitle": "My engineering path...",
+        "islands": [
+          {
+            "id": "college",
+            "label": "AM JAIN COLLEGE",
+            "period": "2023-2026",
+            "image": "/textures/about/uowyspa.webp"
+          },
+          {
+            "id": "developer",
+            "label": "AI DEVELOPER",
+            "period": "2023-NOW",
+            "image": "/textures/about/freelancewyspa.webp"
+          }
+        ]
+      },
+      "skills": {
+        "title": "SKILLS",
+        "subtitle": "Technologies & frameworks I build with",
+        "items": [
+          { "label": "Python", "texture": "/textures/about/balloons/python_balloon.webp", "paintedTexture": "/textures/about/balloons/python_balloon_painted.webp", "size": "large", "x": -2.5, "y": 2, "z": 0.3, "phase": 0 },
+          { "label": "Git/GitHub", "texture": "/textures/about/balloons/gitgithub_balloon.webp", "paintedTexture": "/textures/about/balloons/gitgithub_balloon_painted.webp", "size": "large", "x": 2.5, "y": 2.5, "z": 0.2, "phase": 1.5 },
+          { "label": "React Native", "texture": "/textures/about/balloons/reactnative_balloon.webp", "paintedTexture": "/textures/about/balloons/reactnative_balloon_painted.webp", "size": "large", "x": 0, "y": 3, "z": 0.5, "phase": 3 },
+          { "label": "MySQL", "texture": "/textures/about/balloons/mysql_balloon.webp", "paintedTexture": "/textures/about/balloons/mysql_balloon_painted.webp", "size": "medium", "x": -4, "y": 1, "z": -0.3, "phase": 0.8 },
+          { "label": "Linux", "texture": "/textures/about/balloons/linux_balloon.webp", "paintedTexture": "/textures/about/balloons/linux_balloon_painted.webp", "size": "medium", "x": 4, "y": 1.5, "z": -0.2, "phase": 2.2 },
+          { "label": "Cybersecurity", "texture": "/textures/about/balloons/cybersecurity_balloon.webp", "paintedTexture": "/textures/about/balloons/cybersecurity_balloon_painted.webp", "size": "medium", "x": 0, "y": 0.5, "z": -0.4, "phase": 4 },
+          { "label": "VRoid", "texture": "/textures/about/balloons/vroid_balloon.webp", "paintedTexture": "/textures/about/balloons/vroid_balloon_painted.webp", "size": "medium", "x": -5.5, "y": 2.5, "z": -0.8, "phase": 1.2 },
+          { "label": "After Effects", "texture": "/textures/about/balloons/aftereffects_balloon.webp", "paintedTexture": "/textures/about/balloons/aftereffects_balloon_painted.webp", "size": "small", "x": 5.5, "y": 3, "z": -0.7, "phase": 2.8 },
+          { "label": "Waterfall Model", "texture": "/textures/about/balloons/waterfall_balloon.webp", "paintedTexture": "/textures/about/balloons/waterfall_balloon_painted.webp", "size": "small", "x": -3, "y": 4.5, "z": -0.5, "phase": 3.5 },
+          { "label": "Agile Model", "texture": "/textures/about/balloons/agile_balloon.webp", "paintedTexture": "/textures/about/balloons/agile_balloon_painted.webp", "size": "small", "x": 3.5, "y": 4, "z": -0.6, "phase": 4.5 }
+        ]
+      }
+    },
+    "contact": {
+      "email": "akarthickdev@gmail.com",
+      "socials": [
+        { "id": "github", "label": "GITHUB", "url": "https://github.com/akarthick-dev" },
+        { "id": "linkedin", "label": "LINKEDIN", "url": "https://www.linkedin.com/in/karthicka/" },
+        { "id": "portfolio", "label": "PORTFOLIO", "url": "https://karthicka.me" },
+        { "id": "email", "label": "EMAIL", "url": "mailto:akarthickdev@gmail.com" }
+      ]
+    }
+  }
+}
