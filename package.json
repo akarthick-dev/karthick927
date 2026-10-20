@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "cd \"new protilo\" && npm install --legacy-peer-deps && npx vite build",
+    "build": "cd \"new protilo\" && npm install --legacy-peer-deps && npx vite build && node scripts/prune-dist-assets.js",
     "deploy": "npx wrangler deploy"
   },
   "devDependencies": {
