@@ -1,13 +1,16 @@
 {
-  "name": "karthick-portfolio",
+  "name": "karthick927",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
     "dev": "npm run dev --prefix frontend",
-    "build": "npm run build --prefix frontend",
     "lint": "npm run lint --prefix frontend",
     "preview": "npm run preview --prefix frontend",
-    "deploy": "npm run build && npx wrangler deploy"
+    "deploy": "npx wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
   }
 }
