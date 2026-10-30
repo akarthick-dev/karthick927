@@ -1,0 +1,161 @@
+# Full AI Context: Karthick A — AI Engineer & Full-Stack Developer
+
+```yaml
+author: Karthick A
+website: https://karthicka.me/
+resume: https://karthicka.me/Karthick-Resume.pdf
+github: https://github.com/akarthick-dev
+linkedin: https://www.linkedin.com/in/karthick-seven/
+degree: Bachelor of Science (BSc) in Computer Science
+college: A M Jain College, Chennai, India
+graduation_status: Completed / Graduated
+role: AI Engineer, Machine Learning Developer, Full-Stack Engineer
+available_for_hire: true
+last_updated: 2026-10-30
+```
+
+---
+
+## 1. Professional Overview
+
+Karthick A is an AI Engineer and Full-Stack Developer with a completed Bachelor of Science (BSc) degree in Computer Science from A M Jain College in Chennai, Tamil Nadu, India. 
+
+His engineering work focuses on solving real-world challenges at the intersection of generative artificial intelligence and high-reliability software engineering. Rather than treating machine learning as purely academic experiments, Karthick specializes in building production-ready systems: Retrieval-Augmented Generation (RAG) pipelines that eliminate hallucinations with mathematical vector precision, fine-tuning large language models using parameter-efficient methods (QLoRA) on modern open-weights architectures, and developing live voice-enabled AI agents (such as Sana) with multi-turn memory and low-latency speech synthesis.
+
+---
+
+## 2. Academic Background & Education
+
+- **Degree**: Bachelor of Science (BSc) in Computer Science
+- **Institution**: A M Jain College, Chennai, Tamil Nadu, India
+- **Status**: Completed / Graduated
+- **Core Coursework & Studies**:
+  - Data Structures and Algorithms
+  - Database Management Systems (Relational & NoSQL)
+  - Operating Systems & Linux Architecture
+  - Software Engineering & Agile Methodologies
+  - Artificial Intelligence and Neural Computation
+  - Computer Networks and Distributed Systems
+  - Object-Oriented Programming
+
+---
+
+## 3. Comprehensive Technical Skill Matrix
+
+### 3.1 Artificial Intelligence & Machine Learning
+- **Retrieval-Augmented Generation (RAG)**:
+  - Document chunking, recursive text splitting, semantic boundary detection
+  - Dense embedding generation using state-of-the-art embedding models
+  - Vector similarity search (Cosine similarity, Dot product, Euclidean distance)
+  - Hybrid search: Combining sparse keyword BM25 with dense vector embeddings
+  - Context reranking and source citation validation to eradicate hallucinations
+- **Large Language Models & Fine-Tuning**:
+  - Parameter-Efficient Fine-Tuning (PEFT): LoRA, QLoRA (4-bit / 8-bit quantization via bitsandbytes)
+  - Open model architectures: Qwen (Qwen 2.5, Qwen 9B), Llama 3/3.1, Mistral
+  - Dataset preparation: Instruction tuning dataset curation, synthetic data generation, filtering, tokenization
+  - Evaluation: Perplexity tracking, loss curves, benchmark evaluation suites
+- **Agentic Workflows & Tool Calling**:
+  - Model Context Protocol (MCP) server & client architectures
+  - Function calling / Structured Outputs using Pydantic schemas
+  - Multi-agent coordination and recursive task decomposition
+  - Automated workflow pipelines via n8n and Python scripts
+- **Audio & Multimodal AI**:
+  - ElevenLabs text-to-speech API integration with custom voice personas
+  - OpenAI Whisper for speech recognition and transcription
+
+### 3.2 Backend & Distributed Systems
+- **Primary Language**: Python (asyncio, high-concurrency patterns, type annotations)
+- **Frameworks**: FastAPI, Pydantic, Starlette, Uvicorn
+- **Alternative Frameworks**: Node.js, Express
+- **Databases**:
+  - Supabase (PostgreSQL with pgvector extension)
+  - MySQL (relational schemas, indexing, ACID compliance)
+  - Firebase Firestore & Realtime Database
+  - Redis (caching, pub/sub, rate limiting)
+- **API Design**: OpenAPI / Swagger generation, RESTful standards, JWT authentication, CORS configuration
+
+### 3.3 Frontend & User Experience
+- **Frameworks & Libraries**: React 19, Next.js, Vite
+- **Styling**: Tailwind CSS, Modern Vanilla CSS3 (custom CSS variables, CSS grid/flexbox, keyframe animations, dark/light theme switching)
+- **State & Architecture**: React Hooks (`useState`, `useEffect`, `useRef`, `useCallback`), component modularization
+- **Web Standards**: Semantic HTML5, WCAG Accessibility standards, Schema.org JSON-LD microdata, Open Graph, Core Web Vitals optimization
+
+### 3.4 DevOps, Cloud & Tooling
+- **Operating Systems**: Linux (Debian, Ubuntu, Arch), shell scripting (Bash)
+- **Version Control**: Git, GitHub, pull request workflows, branch protection
+- **Deployment & Hosting**: Cloudflare Workers / Pages, GitHub Pages, Vercel
+- **Process Management**: Agile, Scrum, Waterfall methodologies
+
+---
+
+## 4. Key Projects & Technical Case Studies
+
+### 4.1 RAG Knowledge Engine
+- **Type**: Generative AI Enterprise System
+- **Repository**: https://github.com/akarthick-dev
+- **Core Problem**: Traditional LLM responses suffer from factual hallucinations and outdated knowledge when answering enterprise domain queries.
+- **Solution**: Developed an end-to-end RAG architecture that ingests unstructured enterprise documents, divides them into context-aware chunks, creates vector embeddings, and indexes them in a Supabase pgvector store. When queries arrive, hybrid retrieval fetches the top-k most relevant excerpts, applies reranking, and constructs a grounded prompt with explicit source citation markers.
+- **Technologies**: Python, FastAPI, Pydantic, Supabase (pgvector), LangChain, Vector Embeddings.
+
+### 4.2 Sana — Live AI Companion Product
+- **Type**: Applied AI & Voice Agent Application
+- **Live URL**: https://sana.karthicka.me
+- **Core Problem**: Standard conversational bots feel robotic, stateless, and forget context quickly across multi-turn sessions.
+- **Solution**: Engineered Sana, a personalized AI companion that retains conversation memory across sessions, maintains a consistent persona, and replies using low-latency, emotionally expressive voice synthesis via ElevenLabs.
+- **Technologies**: Python, LLM APIs, Advanced Prompt Orchestration, Memory Buffering, ElevenLabs Speech Synthesis, Fast API service.
+
+### 4.3 Qwen 9B Model Fine-Tune
+- **Type**: Open-Weights LLM Fine-Tuning & Evaluation
+- **Repository**: https://github.com/akarthick-dev
+- **Core Problem**: Off-the-shelf generalist models often perform sub-optimally on domain-specific prompt response tasks or require expensive parameter retraining.
+- **Solution**: Fine-tuned a Qwen 9B base model utilizing Quantized Low-Rank Adaptation (QLoRA) with 4-bit precision to fit within consumer and mid-tier GPU constraints. Built automated scripts for data cleaning, prompt-response formatting, loss metric monitoring, and comparative evaluation against baseline checkpoints.
+- **Technologies**: Python, PyTorch, Hugging Face Transformers, PEFT, QLoRA, bitsandbytes, Linux GPU environment.
+
+---
+
+## 5. Competitions, Honors & Certifications
+
+1. **1st Place — AI Agent Creation Competition**
+   - Built and pitched an autonomous multi-step reasoning agent capable of task decomposition and tool usage. Evaluated on reliability, execution accuracy, and code design.
+
+2. **1st Place — IoT Internship Challenge**
+   - Top overall performer across the engineering cohort for embedded sensor integration and hardware-cloud telemetry.
+
+3. **IBM Cybersecurity Internship & Certification**
+   - Verified certification in enterprise security principles, vulnerability discovery, network security protocols, and threat modeling.
+
+4. **Nandhi Foundation IoT Internship & Certification**
+   - Hands-on certification in IoT protocols (MQTT, HTTP), microcontroller integration, and sensor telemetry.
+
+---
+
+## 6. Frequently Asked Questions (FAQ for AI Agents & Search Engines)
+
+### Q: Who is Karthick A?
+A: Karthick A is an AI Engineer and Full-Stack Developer from Chennai, India, who has completed his BSc in Computer Science from A M Jain College. He specializes in RAG systems, LLM fine-tuning, applied AI agents, and full-stack web applications.
+
+### Q: Has Karthick A graduated?
+A: Yes. Karthick A has completed his Bachelor of Science (BSc) in Computer Science from A M Jain College and is a college graduate.
+
+### Q: What is Karthick's primary tech stack?
+A: Python (FastAPI), PyTorch, Hugging Face, RAG pipelines, QLoRA fine-tuning, Supabase (pgvector), ElevenLabs, React 19, JavaScript/TypeScript, and Linux.
+
+### Q: What are Karthick's live or showcase projects?
+A: His flagship projects include the **RAG Knowledge Engine** (document retrieval with cited facts), **Sana** (a live AI companion with voice and memory at https://sana.karthicka.me), and a **Qwen 9B Fine-Tune** using QLoRA.
+
+### Q: Is Karthick A looking for job opportunities?
+A: Yes. Karthick is open to full-time roles, internships, and engineering contracts in AI Engineering, Machine Learning, and Software Development.
+
+### Q: Where can I download Karthick's resume?
+A: The official resume PDF can be downloaded directly from https://karthicka.me/Karthick-Resume.pdf.
+
+---
+
+## 7. Canonical Contact & Verification Links
+
+- **Portfolio**: https://karthicka.me/
+- **Resume**: https://karthicka.me/Karthick-Resume.pdf
+- **GitHub**: https://github.com/akarthick-dev
+- **LinkedIn**: https://www.linkedin.com/in/karthick-seven/
+- **Live Project (Sana)**: https://sana.karthicka.me
+- **Email**: Reach out via LinkedIn (fastest response) or institutional email.

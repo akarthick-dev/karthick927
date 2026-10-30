@@ -1,0 +1,17 @@
+{
+  "name": "Karthick A — AI Engineer & Full-Stack Developer",
+  "short_name": "Karthick A",
+  "description": "Portfolio of Karthick A, BSc Computer Science Graduate and AI Engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f17",
+  "theme_color": "#0b0f17",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,4 +1,56 @@
+# robots.txt for https://karthicka.me
+# Welcome all web crawlers, search engines, and AI scraping agents
+
 User-agent: *
 Allow: /
 
+# Dedicated AI search engines, LLM indexers and autonomous research agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# Canonical Sitemap
 Sitemap: https://karthicka.me/sitemap.xml
+
+# LLM Documentation & Scraping Standard (https://llmstxt.org)
+# AI agents can ingest structured markdown at:
+# https://karthicka.me/llms.txt
+# https://karthicka.me/llms-full.txt

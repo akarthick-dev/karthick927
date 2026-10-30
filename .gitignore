@@ -9,7 +9,6 @@ dist-ssr/
 **/dist-ssr/
 
 # Backups and cache
-new_protilo_backup/
 .tempmediaStorage/
 *.local
 
