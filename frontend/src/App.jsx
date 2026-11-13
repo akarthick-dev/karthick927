@@ -71,18 +71,17 @@ const FOCUS_AREAS = [
 // Awards & Certifications
 const AWARDS = [
   {
-    title: '1st Place — AI Agent Creation Competition',
-    detail: 'Built and pitched an autonomous AI agent against competing teams, taking first place.',
+    title: '1st Place — AI Agent Automation Challenge',
+    detail: 'Built and pitched an autonomous AI agent workflow against competing teams, taking first place.',
   },
   {
-    title: '1st Place — IoT Internship Challenge',
-    detail: 'Recognised as the top performer across the IoT internship program.',
+    title: 'National Finalist — HACKFORGE 2025 24h Hackathon',
+    detail: 'Selected for a rigorous 24-hour national hackathon, collaborating on rapid software prototyping and delivery.',
   },
 ];
 
 const CERTIFICATIONS = [
-  { title: 'Cybersecurity Internship', issuer: 'IBM' },
-  { title: 'IoT Internship', issuer: 'Nandhi Foundation' },
+  { title: 'Cyber Security Certification (Grade A)', issuer: 'IBM SkillsBuild & ICT Academy' },
 ];
 
 // Icons

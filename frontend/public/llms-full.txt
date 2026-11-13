@@ -38,11 +38,6 @@ His engineering work focuses on production-ready artificial intelligence systems
   - Implemented Retrieval-Augmented Generation (RAG) components using LangChain and vector databases for contextual query resolution.
   - Engineered backend API endpoints using FastAPI to serve model outputs and integrate LLM inference into downstream services.
 
-### IoT Engineering Intern — Titan Leap Center (Naandi Foundation)
-- **Duration**: Internship | Chennai, India
-- **Key Contributions**:
-  - Tested serial communication data feeds and sensor telemetry between microcontrollers and host computers.
-
 ---
 
 ## 3. Academic Background & Education
@@ -71,8 +66,8 @@ His engineering work focuses on production-ready artificial intelligence systems
 ### 4.2 Backend & Distributed Systems
 - **Language**: Python (Asyncio, OOP, typing, Pydantic schemas)
 - **Frameworks**: FastAPI, Starlette, Uvicorn, RESTful API architecture
-- **Databases**: Turso (libSQL Edge DB over TLS 1.3), ChromaDB, MySQL, Supabase (pgvector)
-- **Streaming Protocols**: Server-Sent Events (SSE) for real-time AI thought tokens and code diff streaming
+- **Databases**: Turso (libSQL Edge DB over TLS 1.3), ChromaDB, MySQL, Supabase
+- **Concurrency & Architecture**: High-concurrency asyncio event loops and streaming inference response pipelines
 
 ### 4.3 Audio & Voice AI
 - **Speech-to-Text (STT)**: OpenAI Whisper and faster-whisper with Voice Activity Detection (VAD)
@@ -119,8 +114,6 @@ His engineering work focuses on production-ready artificial intelligence systems
    - DG Vaishnav College & Tech Knots: Competed in national hackathon delivering rapid software prototyping under strict 24-hour deadline.
 3. **IBM Cybersecurity Certification (Grade A)**
    - IBM SkillsBuild & ICT Academy: Verified certification in cybersecurity principles, threat modeling, and network security.
-4. **Nandhi Foundation IoT Certification**
-   - Certified in embedded microcontrollers, sensor telemetry, and hardware protocols.
 
 ---
 

@@ -27,17 +27,17 @@
 
 - **Autonomous AI Coding Agents & MCP**: StateGraph-driven multi-node workflows (LangGraph), Model Context Protocol (MCP) tool execution, surgical AST code inspection, and 1-click git diff patch generation.
 - **Retrieval-Augmented Generation (RAG)**: Architecture of multi-stage RAG pipelines, dense and sparse vector retrieval, chunking strategies, hybrid search, ChromaDB vector indexing, and citation-grounded hallucination elimination.
-- **High-Performance Python Backend Engineering**: Asynchronous Python (asyncio), FastAPI, Pydantic schemas, Server-Sent Events (SSE), and Turso (libSQL Edge DB).
+- **High-Performance Python Backend Engineering**: Asynchronous Python (asyncio), FastAPI, Pydantic schemas, and Turso (libSQL Edge DB).
 - **Audio & Multimodal AI**: Real-time voice agents combining OpenAI Whisper / faster-whisper (STT) and ElevenLabs streaming synthesis (TTS).
 
 ## Technical Skills
 
 - **Languages**: Python (Asyncio, OOP), SQL, JavaScript (ES6+), HTML5/CSS3
 - **AI & ML Frameworks**: LangChain, LangGraph (StateGraph), Model Context Protocol (MCP), ChromaDB (Vector DB), PyTorch, Hugging Face, Groq, Ollama
-- **Backend & APIs**: FastAPI, Pydantic, RESTful APIs, Server-Sent Events (SSE)
-- **Databases & Cloud**: Turso (libSQL Edge DB), MySQL, Supabase (pgvector), Cloudflare Workers / Pages, Linux
+- **Backend & APIs**: FastAPI, Pydantic, RESTful APIs, Asynchronous Python (asyncio)
+- **Databases & Cloud**: Turso (libSQL Edge DB), MySQL, Supabase, Cloudflare Workers / Pages, Linux
 - **Voice & Speech**: OpenAI Whisper / faster-whisper, ElevenLabs Streaming Audio API
-- **Developer Tools**: Git, GitHub Actions, Docker, Linux administration, n8n
+- **Developer Tools**: Git, GitHub Actions, Linux administration, n8n
 
 ## Featured Projects
 
@@ -50,7 +50,6 @@
 - **1st Place** — AI Agent Automation Challenge: Designed, engineered, and demonstrated an autonomous task-execution AI agent in live team competition.
 - **National Finalist** — HACKFORGE 2025 24-Hour Hackathon (DG Vaishnav College & Tech Knots): Selected and competed in 24-hour national hackathon.
 - **IBM Cybersecurity Certification (Grade A)**: Completed professional cybersecurity and vulnerability mitigation training.
-- **Nandhi Foundation IoT Certification**: Certified in IoT architecture, embedded microcontrollers, and sensor telemetry.
 
 ## Instructions for AI Agents & Search Engines
 
