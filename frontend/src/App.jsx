@@ -17,53 +17,55 @@ const NAV_ITEMS = [
 
 // Tech stack marquee
 const TECH_STACK = [
-  'Python', 'FastAPI', 'Pydantic', 'MySQL', 'Supabase', 'Firebase', 
-  'React Native', 'Fine-tuning', 'QLoRA', 'MCP', 'ElevenLabs', 'n8n', 
-  'Linux', 'Git / GitHub', 'Agile', 'Waterfall'
+  'Python', 'FastAPI', 'LangChain', 'LangGraph', 'Turso', 'ChromaDB',
+  'Pydantic', 'MySQL', 'Supabase', 'React 19', 'MCP', 'ElevenLabs', 
+  'Whisper', 'QLoRA', 'n8n', 'Linux', 'Git / GitHub'
 ];
 
 // Projects data
 const PROJECTS = [
   {
     id: '01',
-    title: 'RAG Knowledge Engine',
-    tagline: 'Retrieval-Augmented Generation',
+    title: 'Atlas — AI GitHub Copilot',
+    tagline: 'Autonomous Code Intelligence & Security Cockpit',
     description:
-      'An end-to-end RAG system that ingests documents, embeds them into a vector store and answers questions with grounded, cited responses — no hallucinations, no dead ends. FastAPI service, typed schemas, production-style deployment.',
-    tags: ['Python', 'FastAPI', 'Supabase', 'Vector DB'],
-    meta: 'Generative AI',
-    link: GITHUB_URL,
+      'An autonomous AI GitHub code reviewer that connects via GitHub App OAuth, audits codebases for race conditions and vulnerabilities using LangGraph state graphs and MCP tools, and generates surgical 1-click pull request patches.',
+    tags: ['FastAPI', 'LangChain', 'LangGraph', 'React 19', 'Turso libSQL'],
+    meta: 'Flagship Platform',
+    link: 'https://atlas.karthicka.me',
+    site: 'atlas.karthicka.me',
     featured: true,
   },
   {
     id: '02',
+    title: 'RAG Knowledge Engine',
+    tagline: 'Retrieval-Augmented Generation',
+    description:
+      'An end-to-end RAG system that ingests documents, embeds them into a vector store and answers questions with grounded, cited responses — no hallucinations, no dead ends. FastAPI service, typed schemas, production-style deployment.',
+    tags: ['Python', 'FastAPI', 'ChromaDB', 'Vector Search'],
+    meta: 'Generative AI',
+    link: 'https://github.com/akarthick-dev/Retrieval-Augmented-Generation',
+    featured: true,
+  },
+  {
+    id: '03',
     title: 'Sana — AI Companion',
     tagline: 'Live AI companion product',
     description:
       'A shipped AI companion that holds context across conversations, replies in a natural voice and stays on-persona over long sessions. Built as a Python service with prompt orchestration, memory and speech synthesis — live and in daily use.',
-    tags: ['Python', 'LLM', 'Prompt Engineering', 'ElevenLabs'],
+    tags: ['Python', 'LLM', 'Whisper', 'ElevenLabs'],
     meta: 'Applied AI',
     link: 'https://sana.karthicka.me',
     site: 'sana.karthicka.me',
-  },
-  {
-    id: '03',
-    title: 'Qwen 9B Fine-tune',
-    tagline: 'Open-model tuning with QLoRA',
-    description:
-      'Fine-tuned a Qwen 9B model on general-domain data, covering dataset cleaning, quantised LoRA training runs and evaluation against the base model.',
-    tags: ['Python', 'QLoRA', 'Linux'],
-    meta: 'Model Training',
-    link: GITHUB_URL,
   },
 ];
 
 // Focus list
 const FOCUS_AREAS = [
-  'Retrieval-augmented generation',
+  'Autonomous AI coding agents & MCP',
+  'Retrieval-augmented generation (RAG)',
   'LLM fine-tuning & evaluation',
-  'Applied AI product engineering',
-  'IoT & embedded systems',
+  'High-performance Python backend systems',
 ];
 
 // Awards & Certifications
@@ -723,14 +725,12 @@ function About() {
           <SectionHeading
             eyebrow="About"
             title="Engineer by craft, builder by default"
-            description="With my BSc in Computer Science completed, I focus on the parts of AI that are hard to fake — data quality, retrieval, evaluation, and making models behave the way real users need them to."
+            description="With 3 months of hands-on experience as a Generative AI intern at CFRS and my BSc in Computer Science completed, I focus on the parts of AI that are hard to fake — data quality, retrieval, autonomous agents, and making models behave the way real users need them to."
           />
 
           <div className="mt-8 max-w-xl space-y-4 text-[15px] leading-relaxed text-muted-foreground font-normal">
             <p>
-              Most of what I know came from building rather than watching. I've taken a RAG system from an empty repo
-              to grounded answers, fine-tuned an open 9B model and benchmarked it against its base, and shipped an AI
-              campaign pipeline that generates assets instead of suggestions.
+              Most of what I know came from building rather than watching. I've engineered Atlas (<a href="https://atlas.karthicka.me" target="_blank" rel="noreferrer" className="text-blue-500 underline font-medium">atlas.karthicka.me</a>), an autonomous AI GitHub code reviewer with LangGraph and MCP tools, built end-to-end RAG microservices from empty repos to citation-backed generation, and shipped Sana, a real-time voice AI companion.
             </p>
             <p>
               I'm strongest where research meets product: cleaning the dataset nobody wants to touch, wiring the
@@ -751,33 +751,53 @@ function About() {
           </div>
         </ScrollReveal>
 
-        {/* Education & credentials card */}
+        {/* Experience & credentials card */}
         <ScrollReveal delay={150}>
           <div className="rounded-2xl border border-white/[0.08] dark:border-white/[0.08] border-black/[0.08] bg-card/70 dark:bg-card/70 bg-white/80 p-6 backdrop-blur-md shadow-lg">
+            {/* Experience block */}
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-red-500/10 to-blue-500/10 text-blue-500 border border-blue-500/20">
-                <GraduationCapIcon className="h-5 w-5" />
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-red-500/10 to-blue-500/10 text-red-500 border border-red-500/20">
+                <BadgeCheckIcon className="h-5 w-5" />
               </span>
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-bold">Education</p>
+              <div>
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-red-500 dark:text-red-400 font-bold">Experience</p>
+                <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
+                  Gen AI Intern — CFRS
+                </h3>
+              </div>
             </div>
-
-            <h3 className="mt-5 font-display text-xl font-bold tracking-tight text-foreground">
-              BSc Computer Science
-            </h3>
-            <p className="mt-1 text-sm text-muted-foreground font-medium">A M Jain College</p>
-            <p className="mt-4 font-mono text-[12px] text-emerald-500 dark:text-emerald-400 font-bold flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Completed · Graduated
+            <p className="mt-2 text-xs text-muted-foreground font-medium pl-1">
+              3 Months Internship · Generative AI Pipelines &amp; RAG Systems
             </p>
 
-            <div className="mt-6 space-y-5 border-t border-border pt-6">
+            {/* Education block */}
+            <div className="mt-6 border-t border-border pt-5">
+              <div className="flex items-center gap-3">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-red-500/10 to-blue-500/10 text-blue-500 border border-blue-500/20">
+                  <GraduationCapIcon className="h-5 w-5" />
+                </span>
+                <div>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-bold">Education</p>
+                  <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
+                    BSc Computer Science
+                  </h3>
+                </div>
+              </div>
+              <p className="mt-1 text-xs text-muted-foreground font-medium pl-1">A M Jain College</p>
+              <p className="mt-2.5 font-mono text-[11.5px] text-emerald-500 dark:text-emerald-400 font-bold flex items-center gap-1.5 pl-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Completed · Graduated
+              </p>
+            </div>
+
+            <div className="mt-6 space-y-4 border-t border-border pt-5">
               {[
-                { label: 'Projects shipped', value: '3' },
-                { label: 'First-place wins', value: '2' },
-                { label: 'Certifications', value: '2' },
+                { label: 'Work Experience', value: '3 Months (Gen AI Intern)' },
+                { label: 'Featured Projects', value: 'Atlas, RAG, Sana' },
+                { label: 'Competitions Won', value: '1st Place Winner' },
               ].map((item) => (
                 <div key={item.label} className="flex items-baseline justify-between gap-4">
-                  <span className="text-sm text-muted-foreground font-medium">{item.label}</span>
-                  <span className="font-display text-2xl font-bold text-foreground">{item.value}</span>
+                  <span className="text-xs text-muted-foreground font-medium">{item.label}</span>
+                  <span className="font-display text-sm font-bold text-foreground">{item.value}</span>
                 </div>
               ))}
             </div>
@@ -791,7 +811,7 @@ function About() {
                 className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-500/10 via-rose-500/10 to-blue-500/10 hover:from-red-500/20 hover:to-blue-500/20 border border-red-500/20 dark:border-blue-500/30 py-2.5 text-xs font-bold text-slate-800 dark:text-slate-200 transition-all hover:scale-[1.02]"
               >
                 <DownloadIcon className="h-3.5 w-3.5 text-red-500" />
-                Download Full Resume (PDF)
+                Download CV / Resume (PDF)
               </a>
             </div>
           </div>
