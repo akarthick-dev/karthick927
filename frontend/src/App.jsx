@@ -17,8 +17,8 @@ const NAV_ITEMS = [
 
 // Tech stack marquee
 const TECH_STACK = [
-  'Python', 'FastAPI', 'LangChain', 'LangGraph', 'Turso', 'ChromaDB',
-  'Pydantic', 'MySQL', 'Supabase', 'React 19', 'MCP', 'ElevenLabs', 
+  'Python', 'FastAPI', 'LangChain', 'Turso', 'ChromaDB',
+  'Pydantic', 'MySQL', 'Supabase', 'MCP', 'ElevenLabs', 
   'Whisper', 'QLoRA', 'n8n', 'Linux', 'Git / GitHub'
 ];
 
@@ -29,8 +29,8 @@ const PROJECTS = [
     title: 'Atlas — AI GitHub Copilot',
     tagline: 'Autonomous Code Intelligence & Security Cockpit',
     description:
-      'An autonomous AI GitHub code reviewer that connects via GitHub App OAuth, audits codebases for race conditions and vulnerabilities using LangGraph state graphs and MCP tools, and generates surgical 1-click pull request patches.',
-    tags: ['FastAPI', 'LangChain', 'LangGraph', 'React 19', 'Turso libSQL'],
+      'An autonomous AI GitHub code reviewer that connects via GitHub App OAuth, audits codebases for race conditions and vulnerabilities using autonomous agent workflows and MCP tools, and generates surgical 1-click pull request patches.',
+    tags: ['FastAPI', 'LangChain', 'MCP', 'Turso libSQL'],
     meta: 'Flagship Platform',
     link: 'https://atlas.karthicka.me',
     site: 'atlas.karthicka.me',
@@ -724,12 +724,12 @@ function About() {
           <SectionHeading
             eyebrow="About"
             title="Engineer by craft, builder by default"
-            description="With 3 months of hands-on experience as a Generative AI intern at CFRS and my BSc in Computer Science completed, I focus on the parts of AI that are hard to fake — data quality, retrieval, autonomous agents, and making models behave the way real users need them to."
+            description="With 3 months of hands-on experience as an AI intern at CFRS and my BSc in Computer Science completed, I focus on the parts of AI that are hard to fake — data quality, retrieval, autonomous agents, and making models behave the way real users need them to."
           />
 
           <div className="mt-8 max-w-xl space-y-4 text-[15px] leading-relaxed text-muted-foreground font-normal">
             <p>
-              Most of what I know came from building rather than watching. I've engineered Atlas (<a href="https://atlas.karthicka.me" target="_blank" rel="noreferrer" className="text-blue-500 underline font-medium">atlas.karthicka.me</a>), an autonomous AI GitHub code reviewer with LangGraph and MCP tools, built end-to-end RAG microservices from empty repos to citation-backed generation, and shipped Sana, a real-time voice AI companion.
+              Most of what I know came from building rather than watching. I've engineered Atlas (<a href="https://atlas.karthicka.me" target="_blank" rel="noreferrer" className="text-blue-500 underline font-medium">atlas.karthicka.me</a>), an autonomous AI GitHub code reviewer with MCP tools, built end-to-end RAG microservices from empty repos to citation-backed generation, and shipped Sana, a real-time voice AI companion.
             </p>
             <p>
               I'm strongest where research meets product: cleaning the dataset nobody wants to touch, wiring the
@@ -761,12 +761,12 @@ function About() {
               <div>
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-red-500 dark:text-red-400 font-bold">Experience</p>
                 <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
-                  Gen AI Intern — CFRS
+                  AI Intern — CFRS
                 </h3>
               </div>
             </div>
             <p className="mt-2 text-xs text-muted-foreground font-medium pl-1">
-              3 Months Internship · Generative AI Pipelines &amp; RAG Systems
+              3 Months Internship · AI Pipelines &amp; RAG Systems
             </p>
 
             {/* Education block */}
@@ -790,7 +790,7 @@ function About() {
 
             <div className="mt-6 space-y-4 border-t border-border pt-5">
               {[
-                { label: 'Work Experience', value: '3 Months (Gen AI Intern)' },
+                { label: 'Work Experience', value: '3 Months (AI Intern)' },
                 { label: 'Featured Projects', value: 'Atlas, RAG, Sana' },
                 { label: 'Competitions Won', value: '1st Place Winner' },
               ].map((item) => (
