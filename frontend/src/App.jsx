@@ -38,13 +38,13 @@ const PROJECTS = [
   },
   {
     id: '02',
-    title: 'RAG Knowledge Engine',
-    tagline: 'Retrieval-Augmented Generation',
+    title: 'Offline Multimodal RAG',
+    tagline: 'Air-Gapped Knowledge Intelligence Engine',
     description:
-      'An end-to-end RAG system that ingests documents, embeds them into a vector store and answers questions with grounded, cited responses — no hallucinations, no dead ends. FastAPI service, typed schemas, production-style deployment.',
-    tags: ['Python', 'FastAPI', 'ChromaDB', 'Vector Search'],
-    meta: 'Generative AI',
-    link: 'https://github.com/akarthick-dev/Retrieval-Augmented-Generation',
+      'A 100% air-gapped, privacy-first multimodal RAG system running entirely locally on CPU/GPU. Ingests cross-format documents (PDFs, DOCX, CSV/XLSX) and audio via faster-whisper, generating vector embeddings with nomic-embed and grounded answers via local Ollama.',
+    tags: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'faster-whisper'],
+    meta: 'Applied AI',
+    link: 'https://github.com/akarthick-dev',
     featured: true,
   },
   {

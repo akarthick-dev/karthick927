@@ -42,7 +42,7 @@
 ## Featured Projects
 
 - [Atlas — Autonomous AI GitHub Copilot & Code Intelligence Cockpit](https://atlas.karthicka.me): Autonomous AI code reviewer that connects via GitHub App OAuth, audits codebases for vulnerabilities using autonomous agent workflows and MCP tools, and generates surgical 1-click pull request patches. Built with Python 3.13, FastAPI, LangChain, and Turso libSQL.
-- [Retrieval-Augmented Generation (RAG) Service](https://github.com/akarthick-dev/Retrieval-Augmented-Generation): Production-grade document question-answering microservice. Ingests raw documentation, embeds with dense vectors into ChromaDB, and generates factually verified answers with source citations using FastAPI and typed Pydantic schemas.
+- [Offline Multimodal RAG — Air-Gapped Knowledge Engine](https://github.com/akarthick-dev): 100% air-gapped, privacy-first multimodal RAG system running entirely locally on CPU/GPU. Ingests cross-format documents (PDF, DOCX, CSV/XLSX) and audio via faster-whisper, generating vector embeddings with nomic-embed and grounded answers via local Ollama (mistral-nemo) with verifiable citation locators.
 - [Sana — Real-Time Voice AI Companion](https://sana.karthicka.me): Shipped, live voice-enabled AI companion holding persistent contextual memory across multi-turn sessions. Built with Python prompt orchestration, faster-whisper, Groq inference, and ElevenLabs streaming speech synthesis.
 
 ## Awards & Achievements
