@@ -39,9 +39,9 @@ const PROJECTS = [
   {
     id: '02',
     title: 'Offline Multimodal RAG',
-    tagline: 'Air-Gapped Knowledge Intelligence Engine',
+    tagline: 'Local Multimodal Retrieval Engine',
     description:
-      'A 100% air-gapped, privacy-first multimodal RAG system running entirely locally on CPU/GPU. Ingests cross-format documents (PDFs, DOCX, CSV/XLSX) and audio via faster-whisper, generating vector embeddings with nomic-embed and grounded answers via local Ollama.',
+      'A 100% offline, privacy-first multimodal RAG system running entirely locally on CPU/GPU. Ingests cross-format documents (PDFs, DOCX, CSV/XLSX) and audio via faster-whisper, generating vector embeddings with nomic-embed and grounded answers via local Ollama.',
     tags: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'faster-whisper'],
     meta: 'Applied AI',
     link: 'https://github.com/akarthick-dev',

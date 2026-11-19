@@ -86,10 +86,10 @@ His engineering work focuses on production-ready artificial intelligence systems
   - Surgical MCP tools reading exact file line ranges (`read_file(start_line, end_line)`).
   - 1-Click Pull Request creation that computes unified git diffs, provisions branches, and opens ready-to-merge PRs on GitHub.
 
-### 5.2 Offline Multimodal RAG — Air-Gapped Knowledge Engine
+### 5.2 Offline Multimodal RAG
 - **Stack**: Python, FastAPI, Ollama (mistral-nemo), ChromaDB, SentenceTransformers (nomic-embed-text-v1.5), faster-whisper
 - **Architecture**:
-  - 100% air-gapped multimodal RAG pipeline executing fully offline on local CPU/GPU hardware.
+  - 100% offline multimodal RAG pipeline executing on local CPU/GPU hardware.
   - Multi-format ingestion pipeline extracting text and tables from PDFs, DOCX, CSV/XLSX, and transcribing audio recordings via faster-whisper with precise timestamp tracking.
   - Local embedding engine using nomic-embed-text-v1.5 with task prefixing (`search_document`, `search_query`) and ChromaDB vector indexing.
   - Local LLM inference powered by Ollama (mistral-nemo) with an 8,192-token context window.
